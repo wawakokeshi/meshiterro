@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   devise_for :users
   #devise_for :users は、devise を使用する際に URL として users を含むことを示しています。
 
-  resources :post_images, only: [:new, :index, :show]
+  resources :post_images, only: [:new, :create, :index, :show]
 
 
   get 'homes/about' => 'homes#about', as: 'about'
